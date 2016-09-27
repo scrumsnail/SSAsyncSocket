@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87B4E8691D9A44BD0089FA8F /* TCP通信测试需求_160401.txt in Resources */ = {isa = PBXBuildFile; fileRef = 87B4E8681D9A44BD0089FA8F /* TCP通信测试需求_160401.txt */; };
+		87F722741D9917B200F52EFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F722731D9917B200F52EFB /* main.m */; };
+		87F722771D9917B200F52EFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F722761D9917B200F52EFB /* AppDelegate.m */; };
+		87F7227A1D9917B200F52EFB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F722791D9917B200F52EFB /* ViewController.m */; };
+		87F7227D1D9917B200F52EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F7227B1D9917B200F52EFB /* Main.storyboard */; };
+		87F722801D9917B200F52EFB /* SSAsyncSocket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87F7227E1D9917B200F52EFB /* SSAsyncSocket.xcdatamodeld */; };
+		87F722821D9917B200F52EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F722811D9917B200F52EFB /* Assets.xcassets */; };
+		87F722851D9917B200F52EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87F722831D9917B200F52EFB /* LaunchScreen.storyboard */; };
+		87F722901D9917B200F52EFB /* SSAsyncSocketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F7228F1D9917B200F52EFB /* SSAsyncSocketTests.m */; };
+		87F7229B1D9917B300F52EFB /* SSAsyncSocketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F7229A1D9917B300F52EFB /* SSAsyncSocketUITests.m */; };
+		87F722AF1D991B3C00F52EFB /* SSAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F722AE1D991B3C00F52EFB /* SSAsyncSocket.m */; };
+		C7A68DB473941EE71FE37BAB /* Pods_SSAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7B14A1CD7A756C6346830D /* Pods_SSAsyncSocket.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87F7228C1D9917B200F52EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F722671D9917B200F52EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F7226E1D9917B200F52EFB;
+			remoteInfo = SSAsyncSocket;
+		};
+		87F722971D9917B300F52EFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87F722671D9917B200F52EFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87F7226E1D9917B200F52EFB;
+			remoteInfo = SSAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0417BE68782F0A8F7A9C335D /* Pods-SSAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAsyncSocket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SSAsyncSocket/Pods-SSAsyncSocket.debug.xcconfig"; sourceTree = "<group>"; };
+		7171A8A74C533294B0EE91D6 /* Pods-SSAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSAsyncSocket.release.xcconfig"; path = "Pods/Target Support Files/Pods-SSAsyncSocket/Pods-SSAsyncSocket.release.xcconfig"; sourceTree = "<group>"; };
+		87B4E8681D9A44BD0089FA8F /* TCP通信测试需求_160401.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "TCP通信测试需求_160401.txt"; sourceTree = "<group>"; };
+		87F7226F1D9917B200F52EFB /* SSAsyncSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSAsyncSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F722731D9917B200F52EFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87F722751D9917B200F52EFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87F722761D9917B200F52EFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87F722781D9917B200F52EFB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87F722791D9917B200F52EFB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87F7227C1D9917B200F52EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87F7227F1D9917B200F52EFB /* SSAsyncSocket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SSAsyncSocket.xcdatamodel; sourceTree = "<group>"; };
+		87F722811D9917B200F52EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87F722841D9917B200F52EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87F722861D9917B200F52EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F7228B1D9917B200F52EFB /* SSAsyncSocketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSAsyncSocketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F7228F1D9917B200F52EFB /* SSAsyncSocketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAsyncSocketTests.m; sourceTree = "<group>"; };
+		87F722911D9917B200F52EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F722961D9917B300F52EFB /* SSAsyncSocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSAsyncSocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F7229A1D9917B300F52EFB /* SSAsyncSocketUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSAsyncSocketUITests.m; sourceTree = "<group>"; };
+		87F7229C1D9917B300F52EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F722AD1D991B3C00F52EFB /* SSAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSAsyncSocket.h; sourceTree = "<group>"; };
+		87F722AE1D991B3C00F52EFB /* SSAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSAsyncSocket.m; sourceTree = "<group>"; };
+		DC7B14A1CD7A756C6346830D /* Pods_SSAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87F7226C1D9917B200F52EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A68DB473941EE71FE37BAB /* Pods_SSAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722881D9917B200F52EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722931D9917B300F52EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122A6245789EA8A15F212DA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B14A1CD7A756C6346830D /* Pods_SSAsyncSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87F722661D9917B200F52EFB = {
+			isa = PBXGroup;
+			children = (
+				87F722711D9917B200F52EFB /* SSAsyncSocket */,
+				87F7228E1D9917B200F52EFB /* SSAsyncSocketTests */,
+				87F722991D9917B300F52EFB /* SSAsyncSocketUITests */,
+				87F722701D9917B200F52EFB /* Products */,
+				AC3A5505E97F9DAB2FC73F28 /* Pods */,
+				122A6245789EA8A15F212DA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87F722701D9917B200F52EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87F7226F1D9917B200F52EFB /* SSAsyncSocket.app */,
+				87F7228B1D9917B200F52EFB /* SSAsyncSocketTests.xctest */,
+				87F722961D9917B300F52EFB /* SSAsyncSocketUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87F722711D9917B200F52EFB /* SSAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				87B4E8681D9A44BD0089FA8F /* TCP通信测试需求_160401.txt */,
+				87F722A91D9919D700F52EFB /* SSAsyncSocket */,
+				87F722751D9917B200F52EFB /* AppDelegate.h */,
+				87F722761D9917B200F52EFB /* AppDelegate.m */,
+				87F722781D9917B200F52EFB /* ViewController.h */,
+				87F722791D9917B200F52EFB /* ViewController.m */,
+				87F7227B1D9917B200F52EFB /* Main.storyboard */,
+				87F722811D9917B200F52EFB /* Assets.xcassets */,
+				87F722831D9917B200F52EFB /* LaunchScreen.storyboard */,
+				87F722861D9917B200F52EFB /* Info.plist */,
+				87F7227E1D9917B200F52EFB /* SSAsyncSocket.xcdatamodeld */,
+				87F722721D9917B200F52EFB /* Supporting Files */,
+			);
+			path = SSAsyncSocket;
+			sourceTree = "<group>";
+		};
+		87F722721D9917B200F52EFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87F722731D9917B200F52EFB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87F7228E1D9917B200F52EFB /* SSAsyncSocketTests */ = {
+			isa = PBXGroup;
+			children = (
+				87F7228F1D9917B200F52EFB /* SSAsyncSocketTests.m */,
+				87F722911D9917B200F52EFB /* Info.plist */,
+			);
+			path = SSAsyncSocketTests;
+			sourceTree = "<group>";
+		};
+		87F722991D9917B300F52EFB /* SSAsyncSocketUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87F7229A1D9917B300F52EFB /* SSAsyncSocketUITests.m */,
+				87F7229C1D9917B300F52EFB /* Info.plist */,
+			);
+			path = SSAsyncSocketUITests;
+			sourceTree = "<group>";
+		};
+		87F722A91D9919D700F52EFB /* SSAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				87F722AD1D991B3C00F52EFB /* SSAsyncSocket.h */,
+				87F722AE1D991B3C00F52EFB /* SSAsyncSocket.m */,
+			);
+			path = SSAsyncSocket;
+			sourceTree = "<group>";
+		};
+		AC3A5505E97F9DAB2FC73F28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0417BE68782F0A8F7A9C335D /* Pods-SSAsyncSocket.debug.xcconfig */,
+				7171A8A74C533294B0EE91D6 /* Pods-SSAsyncSocket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87F7226E1D9917B200F52EFB /* SSAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F7229F1D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocket" */;
+			buildPhases = (
+				5BB17602D19912BEFEEDDCBD /* Check Pods Manifest.lock */,
+				87F7226B1D9917B200F52EFB /* Sources */,
+				87F7226C1D9917B200F52EFB /* Frameworks */,
+				87F7226D1D9917B200F52EFB /* Resources */,
+				210DBBA6AA0736D981CAB2C7 /* Embed Pods Frameworks */,
+				512FA3DABB615D6B395CEABA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSAsyncSocket;
+			productName = SSAsyncSocket;
+			productReference = 87F7226F1D9917B200F52EFB /* SSAsyncSocket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87F7228A1D9917B200F52EFB /* SSAsyncSocketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F722A21D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocketTests" */;
+			buildPhases = (
+				87F722871D9917B200F52EFB /* Sources */,
+				87F722881D9917B200F52EFB /* Frameworks */,
+				87F722891D9917B200F52EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F7228D1D9917B200F52EFB /* PBXTargetDependency */,
+			);
+			name = SSAsyncSocketTests;
+			productName = SSAsyncSocketTests;
+			productReference = 87F7228B1D9917B200F52EFB /* SSAsyncSocketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87F722951D9917B300F52EFB /* SSAsyncSocketUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87F722A51D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocketUITests" */;
+			buildPhases = (
+				87F722921D9917B300F52EFB /* Sources */,
+				87F722931D9917B300F52EFB /* Frameworks */,
+				87F722941D9917B300F52EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87F722981D9917B300F52EFB /* PBXTargetDependency */,
+			);
+			name = SSAsyncSocketUITests;
+			productName = SSAsyncSocketUITests;
+			productReference = 87F722961D9917B300F52EFB /* SSAsyncSocketUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87F722671D9917B200F52EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = scrum_snail;
+				TargetAttributes = {
+					87F7226E1D9917B200F52EFB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXYJ6BWCJ;
+						ProvisioningStyle = Automatic;
+					};
+					87F7228A1D9917B200F52EFB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXYJ6BWCJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87F7226E1D9917B200F52EFB;
+					};
+					87F722951D9917B300F52EFB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = VGXYJ6BWCJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 87F7226E1D9917B200F52EFB;
+					};
+				};
+			};
+			buildConfigurationList = 87F7226A1D9917B200F52EFB /* Build configuration list for PBXProject "SSAsyncSocket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87F722661D9917B200F52EFB;
+			productRefGroup = 87F722701D9917B200F52EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87F7226E1D9917B200F52EFB /* SSAsyncSocket */,
+				87F7228A1D9917B200F52EFB /* SSAsyncSocketTests */,
+				87F722951D9917B300F52EFB /* SSAsyncSocketUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87F7226D1D9917B200F52EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F722851D9917B200F52EFB /* LaunchScreen.storyboard in Resources */,
+				87B4E8691D9A44BD0089FA8F /* TCP通信测试需求_160401.txt in Resources */,
+				87F722821D9917B200F52EFB /* Assets.xcassets in Resources */,
+				87F7227D1D9917B200F52EFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722891D9917B200F52EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722941D9917B300F52EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210DBBA6AA0736D981CAB2C7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSAsyncSocket/Pods-SSAsyncSocket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		512FA3DABB615D6B395CEABA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SSAsyncSocket/Pods-SSAsyncSocket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB17602D19912BEFEEDDCBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87F7226B1D9917B200F52EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F722AF1D991B3C00F52EFB /* SSAsyncSocket.m in Sources */,
+				87F7227A1D9917B200F52EFB /* ViewController.m in Sources */,
+				87F722771D9917B200F52EFB /* AppDelegate.m in Sources */,
+				87F722741D9917B200F52EFB /* main.m in Sources */,
+				87F722801D9917B200F52EFB /* SSAsyncSocket.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722871D9917B200F52EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F722901D9917B200F52EFB /* SSAsyncSocketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F722921D9917B300F52EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F7229B1D9917B300F52EFB /* SSAsyncSocketUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87F7228D1D9917B200F52EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F7226E1D9917B200F52EFB /* SSAsyncSocket */;
+			targetProxy = 87F7228C1D9917B200F52EFB /* PBXContainerItemProxy */;
+		};
+		87F722981D9917B300F52EFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87F7226E1D9917B200F52EFB /* SSAsyncSocket */;
+			targetProxy = 87F722971D9917B300F52EFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87F7227B1D9917B200F52EFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F7227C1D9917B200F52EFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87F722831D9917B200F52EFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87F722841D9917B200F52EFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87F7229D1D9917B300F52EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87F7229E1D9917B300F52EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87F722A01D9917B300F52EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0417BE68782F0A8F7A9C335D /* Pods-SSAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87F722A11D9917B300F52EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7171A8A74C533294B0EE91D6 /* Pods-SSAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87F722A31D9917B300F52EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAsyncSocket.app/SSAsyncSocket";
+			};
+			name = Debug;
+		};
+		87F722A41D9917B300F52EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocketTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SSAsyncSocket.app/SSAsyncSocket";
+			};
+			name = Release;
+		};
+		87F722A61D9917B300F52EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SSAsyncSocket;
+			};
+			name = Debug;
+		};
+		87F722A71D9917B300F52EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VGXYJ6BWCJ;
+				INFOPLIST_FILE = SSAsyncSocketUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.scrum-snail.SSAsyncSocketUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SSAsyncSocket;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87F7226A1D9917B200F52EFB /* Build configuration list for PBXProject "SSAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F7229D1D9917B300F52EFB /* Debug */,
+				87F7229E1D9917B300F52EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F7229F1D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F722A01D9917B300F52EFB /* Debug */,
+				87F722A11D9917B300F52EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F722A21D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F722A31D9917B300F52EFB /* Debug */,
+				87F722A41D9917B300F52EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87F722A51D9917B300F52EFB /* Build configuration list for PBXNativeTarget "SSAsyncSocketUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87F722A61D9917B300F52EFB /* Debug */,
+				87F722A71D9917B300F52EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87F7227E1D9917B200F52EFB /* SSAsyncSocket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87F7227F1D9917B200F52EFB /* SSAsyncSocket.xcdatamodel */,
+			);
+			currentVersion = 87F7227F1D9917B200F52EFB /* SSAsyncSocket.xcdatamodel */;
+			path = SSAsyncSocket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 87F722671D9917B200F52EFB /* Project object */;
+}

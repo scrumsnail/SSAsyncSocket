@@ -1,0 +1,6 @@
+platform :ios,'8.0'
+
+target 'SSAsyncSocket' do
+  use_frameworks!
+  pod 'CocoaAsyncSocket'
+end

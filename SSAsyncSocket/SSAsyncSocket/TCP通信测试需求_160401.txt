@@ -1,0 +1,82 @@
+请实现app客户端的TCP长连接需求，并提供测试demo源码：
+
+1、连接服务端（测试服务端地址为61.147.117.163:8881）
+2、向服务端发送登录包
+3、循环接收服务端的返回包，打印出各字段值
+4、每间隔10s向服务端发送心跳包
+
+
+
+
+
+
+
+【1.登陆包】
+	struct loginPack
+	{
+		char head[4];           //里面放"ZJHR"			4个字节  5a 4a 48 52
+		int  length;           //后面数据的长度（包的长度减去8）			4个字节    94 00 00 00
+		unsigned short 		m_nType;	     //请求类型						2个字节   02 01
+		char				m_nIndex;     	 //请求索引，与请求数据包一致   1个字节  00
+		char				m_No;            //暂时不用 					1个字节 00 
+		long				m_lKey;		 	 //一级标识  					4个字节 03 00 00 00 
+		short				m_cCodeType;	 //证券类型 					2个字节 00  00 
+		char				m_cCode[6];		 //证券代码                     6个字节 00 00 00 00 00 00
+		short     			m_nSize;         //请求证券总数                 2个字节 00 00 
+		unsigned short		m_nOption;       //为了4字节对齐而添加的字段    2个字节  00 00
+		char			m_szUser[64];	     //用户名     64个字节  67 75 65 73 74 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+		char			m_szPWD[64];	//密码            64个字节 31 32 33 34 35 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	};
+	
+	C++代码参照：
+	loginPack login ;
+	memset(&login,0x00,sizeof(loginPack));
+	memcpy(login.head,"ZJHR",4);
+	login.length =  sizeof(loginPack) -8;
+	login.m_nType = 0x0102;//请求类型为0x0102
+	login.m_lKey = 3;
+	login.m_nIndex	= 0;//yyyPacketIndex++
+	strncpy(login.m_szUser,_T("guest"),64);
+	strncpy(login.m_szPWD,_T("123456"),64);
+	
+	登陆包总长度：156
+	上面的结构体中:登陆请求包请求类型为0x0102
+	
+	
+	
+【7.数据包的解析】
+
+   ！！！！本项目的编译环境中char 占一个字节，int 4个字节,long 4个字节 unsigned short 2个字节 short 2个字节 unsigned long 4个字节，
+   ！！！！所有的结构体注意1字节对齐
+   
+   7.1返回的包用DataHead解析
+   struct DataHead
+   {
+	char     str[4];
+	int      leng; 							//表示该字段之后的整个包体的长度
+	unsigned short	m_nType;
+	char	        m_nIndex;
+   }
+
+
+
+【6.心跳包】
+	客户端向服务器每发送一个心跳包，服务器会马上返回一个心跳包
+	struct TestSrvData2
+	{
+			char head[4];           //   32 30 31 30
+			int  length;           //04 00 00 00
+			unsigned short m_nType;				//  05 09
+			char		   m_nIndex;     		// 00
+			char		   m_cOperator;   		// 00
+	};
+	TestSrvData2 testSrv;
+	memset(&testSrv,0x00,sizeof(TestSrvData2));
+	memcpy(testSrv.head,"ZJHR",4);
+	testSrv.length =  sizeof(TestSrvData2) -8;
+	testSrv.m_nType =0x0905; //0x0905
+		
+	总长度:12
+	上面的结构体中:初始化请求类型为 0x0905，没有可变字段
